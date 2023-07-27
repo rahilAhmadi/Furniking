@@ -1,9 +1,6 @@
 @font-face {
-    font-family: 'vazir';
-    src: url('../fonts/vazir.eot'); 
-    src: url('../fonts/vazir.ttf')  format('truetype'), 
-         url('../fonts/vazir.woff2') format('woff2'), 
-         url('../fonts/vazir.woff') format('woff');
+    font-family: 'rubik';
+    src: url('../fonts/rubik/Rubik-VariableFont_wght.ttf'); 
   }
 
   *{
@@ -13,11 +10,44 @@
 
 
   body{
-      font-family: 'vazir';
-      direction: rtl;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      height: 100vh;
   }
+  header{
+    width: 100%;
+  }
+.upheader{
+    font-family: 'rubik';
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #7ac751;
+    color: #fff;
+    padding: 10px 100px;
+}
+.upheader .upheader_box{
+    display: flex;
+}
+.upheader .upheader_box .upheader_languge{
+    margin: 0 20px;
+    position: relative;
+    padding-right: 40px;
+    border-right: 2px solid #fff;
+}
+.upheader .upheader_box .upheader_languge::before{
+    content: '';
+    position: absolute;
+    top: 3px;
+    right: 20px;
+    width: 8px;
+    height:8px;
+    border-bottom: 2px solid #fff;
+    border-left: 2px solid #fff;
+    transform:rotate(315deg);
+    -webkit-transform:rotate(315deg);
+    -moz-transform:rotate(315deg);
+    -ms-transform:rotate(315deg);
+    -o-transform:rotate(315deg);
+}
