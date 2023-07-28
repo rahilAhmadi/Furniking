@@ -267,6 +267,66 @@ select{
 }
 .why_us_desc{
     font-size: 14px;
-    color: #515151;
-    
+    color: #515151;   
+}
+
+/* grouping_section */
+.Grouping_section{
+    display: flex;
+    margin: 20px 100px;
+    position: relative;
+}
+.Grouping_section img{
+    width: 60%;
+    height: auto;
+    margin-right: 20px;
+    transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+}
+.Grouping_section .grouping_images_small{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+}
+.Grouping_section .grouping_images_small img{
+    width: 100%;
+    height: 50%;
+    transform: translateX(1px);
+}
+.Grouping_section .grouping_images_small :nth-child(1){
+    margin-bottom: 10px;
+}
+.Grouping_section .grouping_images_small :nth-child(2){
+    margin-top: 10px;
+}
+.grouping_desc{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+.grouping_desc_down{
+    position: absolute;
+    top: 350px;
+    left: 40px;
+}
+.grouping_desc h3,.grouping_desc_down h3{
+    color: #555555;
+    font-size: 20px;
+    font-weight: 500;
+}
+.grouping_desc h4,.grouping_desc_down h4{
+    color: #7AC751;
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+.grouping_desc p,.grouping_desc_down p{
+    color: #7d7d7d;
+}
+.grouping_desc p::after .grouping_desc_down p::after{
+    content: url(../img/arrow_right.svg);
 }
