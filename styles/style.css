@@ -242,3 +242,31 @@ select{
     width: 100px;
     height: 100px;
 }
+
+/* why us */
+.why_us_section{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    margin: 20px 100px;
+}
+.why_us_item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whey_us_content_box{
+    margin-left: 20px;
+}
+.why_us_title{
+    font-size: 20px;
+    color: #2F2F2F;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.why_us_desc{
+    font-size: 14px;
+    color: #515151;
+    
+}
