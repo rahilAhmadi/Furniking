@@ -18,6 +18,7 @@
   }
   header{
     width: 100%;
+    height: 100vh;
   }
 .upheader{
     font-family: 'rubik';
@@ -56,7 +57,7 @@
 .search_box{
     display: flex;
     justify-content: space-between;
-    padding:10px 100px;
+    padding:20px 100px;
 }
 .search_box .logo{
     display: flex;
@@ -139,7 +140,7 @@ select{
 /* header main */
 .header_main{
     background:linear-gradient(#F1FAFFE0, #F1FAFF);
-    margin: 10px 100px;
+    margin: 15px 100px;
     display: flex;
     flex-direction: row-reverse;
 }
