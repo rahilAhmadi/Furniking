@@ -330,3 +330,121 @@ select{
 .grouping_desc p::after .grouping_desc_down p::after{
     content: url(../img/arrow_right.svg);
 }
+/* trending */
+.trend{
+    margin: 40px 100px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.tren_grouping_section{
+    text-align: center;
+}
+.grouping_trend_ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 500px;
+    margin: 40px 0;
+}
+.grouping_trend_ul li{
+    color: #C2C2C2;
+    font-size: 18px;
+    font-weight: 400;
+}
+.active_grouping_trend_li{
+    color: #7AC751 !important;
+}
+
+.trending_item_box{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+.trending_item{
+    position: relative;
+}
+.trending_item .card_trending_img{
+    height:288px ;
+    width:270px;
+}
+.trending_item p{
+    color: #757575;
+    font-size: 15px;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 200;
+}
+.trending_item h3{
+    font-weight: 400;
+    font-size: 22px;
+    color: #555555;
+    margin: 10px 0;
+}
+.trending_item .price span{
+    color: #7AC751;
+    font-weight: 500;
+    font-size: 18px;
+}
+.trending_item .price del{
+    color: #CCCCCC;
+    margin-left: 10px;
+    font-size: 17px;
+}
+.starAndPrice{
+    display: flex;
+    justify-content: space-between;
+}
+.new_up_img_trending{
+    padding: 4px 15px;
+    background-color: #00B7F1;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.Sale_up_img_trending{
+    padding: 4px 15px;
+    background-color: #7AC751;
+    color: #fff;
+    border-bottom-right-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.arrows_trending{
+    margin-top: 50px;
+}
+.arrows_trending img{
+    margin: 0 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.tools_trend{
+    position: absolute;
+    top: 30%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tools_trend .tools_trend_item{
+    width: 24px;
+    height: 24px;
+    margin: 4px 0;
+    background-color: #fff;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
