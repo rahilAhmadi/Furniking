@@ -435,7 +435,7 @@ select{
     height: 20px;
 }
 
-.tools_trend{
+.tools_trend ,.tools_ourProduct{
     position: absolute;
     top: 30%;
     right: 10px;
@@ -443,7 +443,7 @@ select{
     flex-direction: column;
     justify-content: center;
 }
-.tools_trend .tools_trend_item{
+.tools_trend .tools_trend_item ,.tools_ourProduct .tools_ourProduct_item{
     width: 24px;
     height: 24px;
     margin: 4px 0;
@@ -575,4 +575,56 @@ select{
     justify-content: space-between;
     width: 600px !important;
     margin: 40px 0;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(#F5F5F5, #E2E2EA70);
+}
+.tools_ourProduct{
+    position: absolute;
+    top: 30%;
+    right:20px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tools_ourProduct .tools_ourProduct_item.active{
+    background-color: #7AC751;
+    color: #fff;
+}
+.arrows_ourProduct{
+    display: flex;
+    width: 75%;
+    justify-content: end;
+    align-items: center;
+    margin-top: 50px;
+}
+.arrows_ourProduct a{
+    color: #fff;
+    background-color: #7AC751;
+    text-decoration: none;
+    padding: 10px 40px;
+    margin-right: 100px;
+}
+.arrow_box{
+    display: flex;
+    align-items: center;
+}
+.arrow_box input{
+    width:45px;
+    height: 25px;
+    outline: none;
+    text-align: center;
+    margin: 0 20px;
+    background-color: #F1FAFF;
+    border:1px solid #CCCCCC;
+    font-size: 16px;
+    font-weight: 300;
+}
+.arrow_sign{
+    height: 30px;
+    background-color: #7ac751;
+    display: flex;
+    margin-left: 20px;
 }
