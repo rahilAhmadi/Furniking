@@ -805,6 +805,9 @@ select{
     margin-top: 10px;
 }
 /* footer */
+footer{
+    width: 100%;
+}
 footer .footer_content{
     width: 85%;
     display: flex;
@@ -860,4 +863,25 @@ footer .footer_content .footer_columns .soial ul{
 footer .footer_content .footer_columns .soial ul li svg{
     font-size: 18px;
     color: #555555;
+}
+
+/* copy write */
+.copyWrite{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    box-sizing: border-box;
+    color: #757575;
+    border-top: 2px solid #d2d1d1;
+    padding-top:30px;
+    padding-bottom: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+    font-size: 15px;
+}
+.copyWrite div{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
 }
