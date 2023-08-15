@@ -354,16 +354,16 @@
     <section class="our_product">
         <div class="ourProduct_grouping_section">
             <h1 class="title_text">OUR PRODUCTS</h1>
-            <ul class="grouping_ourProduct_ul">
-                <li class="active_grouping_ourProduct_li">All Products</li>
-                <li>Best Sellers</li>
-                <li>New Arrivals</li>
-                <li>Todays Deals</li>
+            <ul class="grouping_ourProduct_ul indicator">
+                <li class="active_grouping_ourProduct_li" data-fillter="all">All Products</li>
+                <li data-fillter="best">Best Sellers</li>
+                <li data-fillter="new">New Arrivals</li>
+                <li data-fillter="todaysDeals">Todays Deals</li>
             </ul>
         </div>
-        <div class="ourProduct_item_box">
-            <div class="ourProduct_item">
-                <img class="card_ourProduct_img container" src="./img/ourProduct_1.png" alt="">
+        <div class="ourProduct_item_box items">
+            <div data-category="todaysDeals" class="ourProduct_item">
+                <img class="card_ourProduct_img" src="./img/ourProduct_1.png" alt="">
                 <div class="tools_ourProduct">
                     <div class="tools_ourProduct_item"><img src="./img/Heart.svg" alt=""></div>
                     <div class="tools_ourProduct_item active"><img src="./img/fi-rr-shopping-bag-add 1.svg"
@@ -371,18 +371,18 @@
                     <div class="tools_ourProduct_item"><img src="./img/refresh 1.svg" alt=""></div>
                     <div class="tools_ourProduct_item"><img src="./img/fi-rr-eye 1.svg" alt=""></div>
                 </div>
-                <span class="sale_up_img_ourProduct">ُSale</span>
+                <span class="sale_up_img_ourProduct">sale</span>
                 <p>Chair</p>
                 <h3>Minimal LCD chair</h3>
-                <div class="starAndPrice">
+                <div class="starAndPrice star_4">
                     <div class="price">
                         <span>$180</span>
                         <del>$250</del>
                     </div>
-                    <img src="./img/star.svg" alt="">
+                    <img class="star_diff" src="./img/star.svg" alt="">
                 </div>
             </div>
-            <div class="ourProduct_item">
+            <div data-category="best" class="ourProduct_item">
                 <img class="card_ourProduct_img" src="./img/ourProduct_2.png" alt="">
                 <span class="red_up_img_ourProduct">-30%</span>
                 <p>sofa</p>
@@ -395,7 +395,7 @@
                     <img class="star_diff" src="./img/star.svg" alt="">
                 </div>
             </div>
-            <div class="ourProduct_item">
+            <div data-category="todaysDeals" class="ourProduct_item">
                 <img class="card_ourProduct_img" src="./img/ourProduct_3.png" alt="">
                 <span class="sale_up_img_ourProduct">ُSale</span>
                 <p>Chair</p>
@@ -408,7 +408,7 @@
                     <img class="star_diff" src="./img/star.svg" alt="">
                 </div>
             </div>
-            <div class="ourProduct_item">
+            <div data-category="new" class="ourProduct_item">
                 <img class="card_ourProduct_img" src="./img/ourProduct_4.png" alt="">
                 <span class="new_up_img_ourProduct">New</span>
                 <p>tabble</p>
@@ -421,7 +421,7 @@
                     <img src="./img/star.svg" alt="">
                 </div>
             </div>
-            <div class="ourProduct_item">
+            <div data-category="todaysDeals" class="ourProduct_item">
                 <img class="card_ourProduct_img" src="./img/ourProduct_5.png" alt="">
                 <span class="sale_up_img_ourProduct">ُSale</span>
                 <p>Chair</p>
@@ -434,7 +434,7 @@
                     <img class="star_diff" src="./img/star.svg" alt="">
                 </div>
             </div>
-            <div class="ourProduct_item">
+            <div data-category="best" class="ourProduct_item">
                 <img class="card_ourProduct_img" src="./img/ourProduct_6.png" alt="">
                 <span class="red_up_img_ourProduct">-30%</span>
                 <p>Bench</p>
@@ -447,7 +447,7 @@
                     <img src="./img/star.svg" alt="">
                 </div>
             </div>
-            <div class="ourProduct_item">
+            <div data-category="new" class="ourProduct_item">
                 <img class="card_ourProduct_img" src="./img/ourProduct_7.png" alt="">
                 <span class="new_up_img_ourProduct">New</span>
                 <p>Storage</p>
@@ -460,7 +460,7 @@
                     <img src="./img/star.svg" alt="">
                 </div>
             </div>
-            <div class="ourProduct_item">
+            <div data-category="new" class="ourProduct_item">
                 <img class="card_ourProduct_img" src="./img/ourProduct_8.png" alt="">
                 <span class="new_up_img_ourProduct">New</span>
                 <p>Furniture</p>
