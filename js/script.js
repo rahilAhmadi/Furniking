@@ -29,6 +29,35 @@ close.onclick=()=>{
     layer.classList.remove('check');
 }
 
+// trend section filter
+
+const indicatiorTrend=document.querySelector('.indicatorTrend').children;
+const mainTrend=document.querySelector('.itemsTrend').children;
+
+
+for(let i=0; i<indicatiorTrend.length;i++)
+{
+    indicatiorTrend[i].onclick=function(){
+        for(let j=0;j<indicatiorTrend.length;j++){
+            indicatiorTrend[j].classList.remove('active_grouping_trend_li')
+        }
+        this.classList.add('active_grouping_ourProduct_li');
+        const displayItem=this.getAttribute('data-fillter');
+        for (let z=0;z<mainTrend.length;z++){
+            mainTrend[z].style.transform='scale(0)';
+            setTimeout(() => {
+                mainTrend[z].style.display='none'
+            }, 500);
+            
+            if(mainTrend[z].getAttribute('data-category')==displayItem || displayItem=='allTrend'){
+                mainTrend[z].style.transform='scale(1)';
+                setTimeout(() => {
+                    mainTrend[z].style.display='block'
+                }, 500);
+            }
+        }
+    }
+}
 // our products filter
 
 const indicatior=document.querySelector('.indicator').children;
