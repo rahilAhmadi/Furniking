@@ -41,7 +41,7 @@ for(let i=0; i<indicatiorTrend.length;i++)
         for(let j=0;j<indicatiorTrend.length;j++){
             indicatiorTrend[j].classList.remove('active_grouping_trend_li')
         }
-        this.classList.add('active_grouping_ourProduct_li');
+        this.classList.add('active_grouping_trend_li');
         const displayItem=this.getAttribute('data-fillter');
         for (let z=0;z<mainTrend.length;z++){
             mainTrend[z].style.transform='scale(0)';
