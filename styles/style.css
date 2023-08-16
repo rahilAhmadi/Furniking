@@ -1023,4 +1023,94 @@ footer .footer_content .footer_columns .soial ul li svg{
     .navbar{
         display: none;
     }
+    .search_box .search{
+        display: none;
+    }
+    .why_us_section{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .why_us_section .why_us_item {
+        width: 30%;
+        margin: 15px 40px;
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .why_us_section .why_us_item img{
+        width: 35px;
+        height: 35px;
+    }
+    .why_us_section .why_us_item .why_us_title{
+        font-size: 17px;
+    }
+    .why_us_section .why_us_item .why_us_desc{
+        font-size: 14px;
+    }
+    .header_main{
+        margin: 15px 20px;
+    }
+    .main_img img{
+        width: 300px;
+        transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        -moz-transform: scaleX(-1);
+        -ms-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+    }
+    .header_main .main_desc{
+        font-size: 26px;
+    }
+    .header_main_desc span{
+        display: none;
+    }
+    .header_main .green_up_desc{
+        font-size: 19px;
+    }
+    .header_main .gray_down_desc{
+        font-size: 17px;
+    }
+    .images_header img{
+        width: 60px;
+        height: 60px;
+    }
+    .images_header{
+        margin: 30px 0;
+    }
+    .images_header .images_item{
+        width: 80%;
+    }
+    .images_header .price_header{
+        font-size: 15px;
+    }
+    .images_header .images_desc {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width:650px){
+    .header_main_img {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        justify-content: flex-end;
+        margin-right: 100px;
+    }
+    .header_main_desc {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px;
+        position: relative;
+        justify-content: center;
+    }
+    .main_img img {
+        display: none;
+    }
+    .why_us_section{
+        margin-top: -50px;
+    }
 }
