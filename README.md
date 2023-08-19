@@ -10,6 +10,7 @@ Furniking is a responsive website, responsive for all devices, built using HTML,
 
 ![furniking demo](https://github.com/rahilAhmadi/Furniking/assets/67064503/de16a05c-d55f-42e6-a14b-05e3c722e1cd)
 ![furniking demo2](https://github.com/rahilAhmadi/Furniking/assets/67064503/278bac11-8b4e-494a-a719-96c65811b142)
+![furniking demo gif (1) (1) (1) (1)](https://github.com/rahilAhmadi/Furniking/assets/67064503/95c1d444-2160-42de-8550-fa2e59f14a9f)
 
 ## Prerequisites
 
