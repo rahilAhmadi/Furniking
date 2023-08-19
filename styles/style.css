@@ -289,12 +289,15 @@ select{
     color: #2F2F2F;
     margin: 20px 0;
 }
-.header_main .header_main_desc span img{
+.furiture_text{
+    position: relative;
+}
+.header_main .green_underline{
     width: 280px;
     height: 8px;
     position: absolute;
-    top: 300px;
-    left: 150px;
+    top: 64px;
+    left: -16px;
 }
 .gray_down_desc{
     color: #515151;
@@ -490,10 +493,10 @@ select{
 }
 
 .trending_item_box ,.ourProduct_item_box{
-    display: grid;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(4,1fr);
-    grid-gap: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
 }
 .trending_item ,.ourProduct_item{
     position: relative;
@@ -771,7 +774,7 @@ select{
     background-color: #F8FAFB;
     position: relative;
     margin: 100px 0;
-    padding: 60px;
+    padding: 60px 10px;
 }
 .comment_box img{
     width: 100px;
@@ -1015,6 +1018,43 @@ footer .footer_content .footer_columns .soial ul li svg{
     justify-content: space-between;
 }
 /* responsive */
+@media only screen and (max-width: 1200px) {
+    .images_header{
+        display: none;
+    }
+    .header_main_img{
+        margin: 0;
+    }
+    .header_main_desc {
+        left: 30px;
+        top: 50%;
+        width: 40%;
+        position: absolute;
+    }
+    .header_main{
+        height: 80vh;
+    }
+    .main_img img{
+        width: 400px;
+    }
+    .main_desc{
+        font-size: 40px;
+    }
+    .header_main .green_underline {
+        width: 231px;
+        height: 8px;
+        position: absolute;
+        top: 54px;
+        left: -25px;
+    }
+    .why_us_item{
+        width: 50%;
+        margin: 20px 0;
+    }
+    .why_us_section{
+        flex-wrap: wrap;
+    }
+}
 @media only screen and (max-width: 992px) {
     .container .menuopen{
         display: block;
@@ -1078,6 +1118,7 @@ footer .footer_content .footer_columns .soial ul li svg{
         height: 60px;
     }
     .images_header{
+        display: block;
         margin: 30px 0;
     }
     .images_header .images_item{
