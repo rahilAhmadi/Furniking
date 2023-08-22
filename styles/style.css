@@ -113,12 +113,70 @@ select{
 .search_box .icons{
     display: flex;
     align-items: center;
+    position: relative;
 }
 .search_box .icons img{
-    width: 24px;
-    height: 24px;
+    width: 30px;
+    height: 30px;
     margin: 0 10px;
 }
+.icons .card_notif{
+    position: relative;
+    cursor: pointer;
+    z-index: 999;
+}
+.icons::before{
+     content: attr(data-count);
+     width: 20px;
+     height: 20px;
+     position: absolute;
+     background-color: #7ac751;
+     top: 0;
+     left: 0;
+     border-radius: 50%;
+     -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+     -ms-border-radius: 50%;
+     -o-border-radius: 50%;
+     opacity: 0;
+     text-align: center;
+     color: #fff;
+}
+.icons.zero::before{
+    opacity: 1;
+}
+
+.select{
+    background-color: #555;
+    position: absolute;
+    top: 100px;
+    right: 50%;
+    width: 60vw;
+    height: 80vh;
+    transform: translateX(50%);
+    -webkit-transform: translateX(50%);
+    -moz-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    -o-transform: translateX(50%);
+    display: none;
+    overflow-y: auto;
+}
+.select.display{
+   display: block;
+}
+.select div{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    position: relative;
+    margin-top: 20px;
+    background-color: rgb(99, 99, 99);
+}
+.select div img{
+    width: 80%;
+    object-fit: cover;
+}
+
 /* navbar */
 .navbar{
     /* width: 100%; */
@@ -500,10 +558,18 @@ select{
 }
 .trending_item ,.ourProduct_item{
     position: relative;
+    overflow: hidden;
+}
+.trending_item:hover .tools_trend, .ourProduct_item:hover .tools_ourProduct{
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
 }
 .trending_item .card_trending_img ,.ourProduct_item .card_ourProduct_img{
     height:288px ;
-    width:270px;
+    width:300px;
 }
 .trending_item p ,.ourProduct_item p{
     color: #757575;
@@ -577,6 +643,16 @@ select{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all .4s ease-in-out;
+    transform: translatex(500px);
+    -webkit-transform: translatex(500px);
+    -moz-transform: translatex(500px);
+    -ms-transform: translatex(500px);
+    -o-transform: translatex(500px);
+    -webkit-transition: all .4s ease-in-out;
+    -moz-transition: all .4s ease-in-out;
+    -ms-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
 }
 .tools_trend .tools_trend_item ,.tools_ourProduct .tools_ourProduct_item{
     width: 24px;
@@ -593,6 +669,15 @@ select{
     display: flex;
     justify-content: center;
     align-items: center
+}
+.tools_trend_item:hover{
+    background-color: #7ac751;
+}
+.tools_trend_item svg{
+    color:#555;
+}
+.tools_trend_item:hover svg{
+    color: #fff;
 }
 
 /* offer */
@@ -1133,25 +1218,50 @@ footer .footer_content .footer_columns .soial ul li svg{
 }
 
 @media only screen and (max-width:650px){
+    .upheader{
+        padding: 10px 20px;
+    }
+    header{
+        height: auto;
+    }
+    .header_main {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-right: 80px;
+        height: 42vh;
+        margin-bottom: 100px;
+        margin-top: 20px;
+    }
     .header_main_img {
         display: flex;
-        flex-direction: row;
-        width: 30%;
-        justify-content: flex-end;
-        margin-right: 100px;
+        justify-content: flex-start;
+    }
+    .images_header{
+        display: none;
     }
     .header_main_desc {
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-direction: column;
         margin-left: 10px;
-        position: relative;
-        justify-content: center;
-    }
-    .main_img img {
-        display: none;
+        position: absolute;
+        top: 185px;
     }
     .why_us_section{
         margin-top: -50px;
+    }
+    .search_box{
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px;
+    }
+    .search_box .icons{
+        display: none;
+    }
+    .container .menuopen {
+        position: absolute;
+        top: 56px;
+        left: 40px;
     }
 }

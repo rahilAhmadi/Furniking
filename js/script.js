@@ -87,3 +87,35 @@ for(let i=0; i<indicatior.length;i++)
         }
     }
 }
+
+// add to card
+const shopping_button=document.querySelector('.card_notif');
+const shoppingNotif=document.querySelector('.icons');
+const addtocard=document.querySelectorAll('.tools_trend_add');
+const select=document.querySelector('.select');
+
+
+
+addtocard.forEach(button => {
+    button.addEventListener('click',function(e){
+        const add =Number(shoppingNotif.getAttribute('data-count')||0);
+        shoppingNotif.setAttribute('data-count',add+1);
+        shoppingNotif.classList.add('zero');
+        
+
+
+        
+        let tool=e.target.parentNode;
+        let parent=tool.parentNode;
+        let clone=parent.cloneNode(true);
+        select.appendChild(clone);
+
+        if(clone){
+            shoppingNotif.addEventListener('click',()=>{
+                select.classList.toggle('display');
+
+            })
+        }
+    })
+});
+
