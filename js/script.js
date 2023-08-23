@@ -108,6 +108,7 @@ addtocard.forEach(button => {
         let tool=e.target.parentNode;
         let parent=tool.parentNode;
         let clone=parent.cloneNode(true);
+        console.log(parent,clone)
         select.appendChild(clone);
 
         if(clone){
